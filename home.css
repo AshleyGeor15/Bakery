@@ -1,0 +1,51 @@
+
+@media (min-width: 877px) { 
+   
+    .laptop-nav {
+        margin: 0 auto;
+        padding:0;
+    }
+    
+    .laptop-nav-items {
+       display:inline-block;
+       font-size: 18.0pt;
+       list-style-type: none;
+
+    }
+
+    .navbar-toggler{
+        display:none;
+    }
+
+ }
+
+ @media only screen and
+  (min-device-width: 320px) and (max-device-width:876px){
+
+   .laptop-nav{
+       display:none;
+      }
+  
+      .laptop-nav-items{
+        display:none;
+       }
+   
+
+}
+
+ .nav{
+     display:none;
+ }
+
+html{
+    display: flex;
+}
+
+nav {
+    width:100vw;
+    background-color:#e2b548;
+}
+
+body {
+    background-color:#e9eb8f;
+}
