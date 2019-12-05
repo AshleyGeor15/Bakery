@@ -1,51 +1,101 @@
 
+html{
+    display: flex;
+}
+
 @media (min-width: 877px) { 
    
+    #main-image-web{
+  
+        margin-top:-5em;
+        min-width: 100vmax;
+        max-height:30vmax;
+    }
+    
     .laptop-nav {
-        margin: 0 auto;
-        padding:0;
+       padding-inline-start: 55%;
+     display:flex;
+     margin:auto;
     }
     
     .laptop-nav-items {
        display:inline-block;
        font-size: 18.0pt;
        list-style-type: none;
-
+       padding-right:15px;
+    
     }
 
     .navbar-toggler{
         display:none;
     }
 
+    .carousel {
+        margin-top:-4em;    
+        position:relative;
+        width: 100vw;
+    }
+
+   .carousel-item{
+   
+      
+   }
+        
+    
+    /*This is a static image on the main page*/
+    .main-page-web{
+        margin-top:-3em;
+        width: 100vw;
+        height:100vh;
+    }
+
+    .main-page-mobile {
+        display: none;
+    }
+
  }
 
  @media only screen and
   (min-device-width: 320px) and (max-device-width:876px){
-
-   .laptop-nav{
-       display:none;
-      }
+ 
   
-      .laptop-nav-items{
-        display:none;
-       }
+   .laptop-nav{
+      display: none !important;
+      
+      }  
+  .carousel {
+        top:20%;
+        position: relative;
+        
+    }
    
 
+ /*This is a static image on the main page*/
+
+    .main-page-web{
+        display:none;
+    }
+    .main-page-mobile {
+        margin-top:-3em;
+        min-width: 100vmin;
+        max-height:40vmax;
+       
+    }
+    
+
 }
 
- .nav{
-     display:none;
+nav,header{
+    position: fixed;
+    top:0;
+    width:100vw;
+    z-index:99;
+
  }
 
-html{
-    display: flex;
-}
-
-nav {
-    width:100vw;
-    background-color:#e2b548;
-}
 
 body {
     background-color:#e9eb8f;
 }
+
+
