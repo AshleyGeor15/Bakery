@@ -30,6 +30,11 @@ body {
 /* This is for sites for bigger devices */
 
 @media (min-width: 877px) { 
+    #menu{
+        display:none;
+    }
+    
+   
    
     #main-image-web{
         padding-top: 20%;
@@ -139,12 +144,66 @@ body {
         
    }
 
+   /*This is for the mobile menu overlay */
+   .overlay{
+	height:100vh;
+	width:0;
+	position:fixed;
+	z-index: 1;
+	top:0;
+	left:0;
+	background-color:#07274e;
+	overflow-x: hidden;
+	transition:0.6;
+
+}
+
+.overlay-content{
+	position:relative;
+	top:25%;
+	width:100%;
+	text-align: center;
+	margin-top:30px;
+}
+
+.overlay .close {
+	position: absolute;
+	top:20px;
+	right:45px;
+	font-size:60px;
+}
+
+
+.overlay a {
+	text-decoration: none;
+	padding: 10px;
+	font-size:24.0pt;
+	color:#CAAAAA;
+	display:block;
+	transition:0.3;
+
+}
+
+.overlay a:hover, .overlay a:focus {
+	color:#fff;
+}
+
+
+.overlay .close{
+	position:absolute;
+	top:20px;
+	right:45px;
+	font-size:60px;
+}
+   
 
 
  }
 
 
 
+
+ 
 
  .Welcome {
         display:flex;
