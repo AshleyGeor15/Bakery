@@ -7,7 +7,6 @@
         <!--External Bootstrap-->
 
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cookie|Dancing+Script|Great+Vibes|Homemade+Apple|Poiret+One|Sacramento|Source+Serif+Pro&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
@@ -16,8 +15,9 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         
         <link rel="stylesheet" href="Recipes.css" type="text/css">
+      
         <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
-        <script src="Recipe.js"></script>
+        
 
     </head>
 
@@ -60,6 +60,9 @@
             function closeMenu(){
                 document.getElementById("mobile-menu").style.width="0%";
             }
+
+
+
             </script>
             
     
@@ -71,8 +74,9 @@
                 <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
                 <div class="overlay-content">
                     <a href="../home.html">Home</a>
-                    <a href="#">Menu</a>
                     <a href="#">Recipes</a>
+                    <a href="#">Menu</a>
+                    
                     <a href="#">About Us</a>
                 </div>
             </div>
@@ -89,13 +93,13 @@
     <!--This is the filter bar for sort the recipes-->
 
     <form>
-        <select class="search-item">            
-            <option value="all">All</option>
-            <option value="Cake">Cakes</option>
-            <option value="Cookie">Cookies</option>
-            <option value="Pies">Pies</option>
-            <option value="Bread">Breads</option>
-            <option value="Other">Other Desserts</option>
+        <select class="event-type-select">            
+            <option class="recipe-all" data-item="all">All</option>
+            <option class="recipe" data-item="Cake">Cakes</option>
+            <option class="recipe" data-item="Cookie">Cookies</option>
+            <option class="recipe" data-item="Pies">Pies</option>
+            <option class="recipe" data-item="Bread">Breads</option>
+            <option class="recipe" data-item="Other">Other Desserts</option>
             
         </select>
     </form>
@@ -119,37 +123,37 @@
     <!--This the main section-->
     <div id="main-section">
 
-        <div id="recipe-content">
+        <div class="container">
 
-            <div class="card " style="width: 18rem;">
+            <div class="food card" data-="Cake" style="width: 18rem;">
                     <img class="card-img-top" src="../Asset/Recipe-Images/cake2.jpeg" alt="Card image cap">
                     <div class="card-body">
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
             </div>
             <br/>
-            <div class="card" style="width: 18rem;">
+            <div class="food card" data-food-item="Bread" style="width: 18rem;">
                     <img class="card-img-top" src="../Asset/Recipe-Images/bread1.jpeg" alt="Card image cap">
                     <div class="card-body">
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
             </div>
             <br/>
-            <div class="card" style="width: 18rem;">
+            <div class="food card" data-food-item="Other" style="width: 18rem;">
                     <img class="card-img-top" src="../Asset/Recipe-Images/pancakes.jpg" alt="Card image cap">
                     <div class="card-body">
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
             </div>
             <br/>
-            <div class="card"style="width: 18rem;">
+            <div class="food card" data-food-item="Cake" style="width: 18rem;">
                     <img class="card-img-top" src="../Asset/Recipe-Images/brownie.jpeg" alt="Card image cap">
                     <div class="card-body">
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
             </div>
             <br/>
-            <div class="card"  style="width: 18rem;">
+            <div class="food card" data-food-item="Bread" style="width: 18rem;">
                     <img class="card-img-top" src="../Asset/Recipe-Images/bread.jpeg" alt="Card image cap">
                     <div class="card-body">
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -170,7 +174,8 @@
             <img class="media-icon" src="../Asset/instagram.png" alt="Instagram icon"/>       
             <img class="media-icon" src="../Asset/twitter.png" alt="Twitter Icon" /> 
         </footer>
-
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="Recipe.js"></script>
     </body>
 
 </html>
