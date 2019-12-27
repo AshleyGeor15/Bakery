@@ -134,12 +134,12 @@ body {
         position: absolute;
         width:100vw;
         height:22vh;
-
-   }
-
-   .media-icon {
     
-    display: block;
+        display:flex;
+    }
+
+   .media-icon { 
+    flex-direction:column;
     margin:auto;
             
    }

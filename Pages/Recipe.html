@@ -15,7 +15,162 @@
 
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         
-        <link rel="stylesheet" href="home.css" type="text/css">
+        <link rel="stylesheet" href="Recipes.css" type="text/css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
+        <script src="Recipe.js"></script>
+
     </head>
 
-<body>
+    <body>
+
+
+        
+        <!-- Just an image -->
+ <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-5">
+            <a class="navbar-brand" href="#">
+                 <img src="../Asset/chef-logo.png" width="40" height="40" alt="logo">
+                Baker's Delight
+            </a>
+     
+           
+              <!--This will be Navitems for devices above 900px-->
+              <ul class="laptop-nav">
+                <li class="laptop-nav-items"> Home</li>
+                <li class="laptop-nav-items">About Us</li>
+                <li class="laptop-nav-items">Menu</li>
+                <li class="laptop-nav-items">Recipes</li>
+              </ul>
+    
+           
+    
+            <button onclick="openMenu()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!--This is the javascript code for the mobile menu overlay -->
+            <script type="text/javascript">
+            
+            function openMenu() {
+                document.getElementById("mobile-menu").style.width="100%";
+            
+            }
+            
+            function closeMenu(){
+                document.getElementById("mobile-menu").style.width="0%";
+            }
+            </script>
+            
+    
+            <!--IT'S CURRENTLY NOT WORKING Right now...
+                sooo Stackoverflow this bad boy
+                
+                This is for mobile's menu-->
+            <div id="mobile-menu" class="overlay" scroll="no">
+                <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
+                <div class="overlay-content">
+                    <a href="../home.html">Home</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Recipes</a>
+                    <a href="#">About Us</a>
+                </div>
+            </div>
+    
+    
+        </nav>
+    </header>
+    
+
+    <p class="main-recipe-title">Recipes</p>
+
+
+
+    <!--This is the filter bar for sort the recipes-->
+
+    <form>
+        <select class="search-item">            
+            <option value="all">All</option>
+            <option value="Cake">Cakes</option>
+            <option value="Cookie">Cookies</option>
+            <option value="Pies">Pies</option>
+            <option value="Bread">Breads</option>
+            <option value="Other">Other Desserts</option>
+            
+        </select>
+    </form>
+
+    <!--- -div class="btn-group filter filter-basic">
+        <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Filter
+        </button>
+        div id="sort-goods" class="dropdown-menu">
+            <a class="all btn-warningdropdown-item"id="all" href="#">All</a>
+            <a class="dropdown-item" id="bread" href="#">Bread</a>
+            <a class="dropdown-item" id="pie" href="#">Pie</a>
+            <a class="dropdown-item" id ="cake" href="#">Cake</a>
+            <a class="dropdown-item" id ="cookie" href="#">Cookies</a>
+            <a class="dropdown-item" id ="other" href="#">Other Desserts</a>
+        /div>
+    /div>
+-->
+    
+
+    <!--This the main section-->
+    <div id="main-section">
+
+        <div id="recipe-content">
+
+            <div class="card " style="width: 18rem;">
+                    <img class="card-img-top" src="../Asset/Recipe-Images/cake2.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+            </div>
+            <br/>
+            <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../Asset/Recipe-Images/bread1.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+            </div>
+            <br/>
+            <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../Asset/Recipe-Images/pancakes.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+            </div>
+            <br/>
+            <div class="card"style="width: 18rem;">
+                    <img class="card-img-top" src="../Asset/Recipe-Images/brownie.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+            </div>
+            <br/>
+            <div class="card"  style="width: 18rem;">
+                    <img class="card-img-top" src="../Asset/Recipe-Images/bread.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+            </div>
+            <br/>
+
+
+
+        </div>
+    </div>
+
+
+
+      <!--Footer-->
+      <footer>
+            <img class="media-icon" src="../Asset/facebook.png" alt="Facebook icon"/>   
+            <img class="media-icon" src="../Asset/instagram.png" alt="Instagram icon"/>       
+            <img class="media-icon" src="../Asset/twitter.png" alt="Twitter Icon" /> 
+        </footer>
+
+    </body>
+
+</html>
