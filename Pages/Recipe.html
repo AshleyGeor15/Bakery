@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="Recipes.css" type="text/css">
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
-        
+        <script src="Recipe.js"></script>
 
     </head>
 
@@ -88,21 +88,28 @@
 
     <p class="main-recipe-title">Recipes</p>
 
+    <p class="search-box-title">Search for Recipes:</p>
+    <div class="center-search-box">
+        <input type="text" id="search-text" aria-placeholder="Search Recipes"
+        class="search-box" data-search >
+    </div>
 
 
     <!--This is the filter bar for sort the recipes-->
-
+<!--
     <form>
         <select class="event-type-select">            
-            <option class="recipe-all" data-item="all">All</option>
-            <option class="recipe" data-item="Cake">Cakes</option>
-            <option class="recipe" data-item="Cookie">Cookies</option>
-            <option class="recipe" data-item="Pies">Pies</option>
-            <option class="recipe" data-item="Bread">Breads</option>
-            <option class="recipe" data-item="Other">Other Desserts</option>
+            <option class="active recipe" data-filter="*">All</option>
+            <option class="recipe" data-filter=".Cake">Cakes</option>
+            <option class="recipe" data-filter=".Cookie">Cookies</option>
+            <option class="recipe" data-filter=".Pies">Pies</option>
+            <option class="recipe" data-filter=".Bread">Breads</option>
+            <option class="recipe" data-filter=".Other">Other Desserts</option>
             
         </select>
     </form>
+-->
+    
 
     <!--- -div class="btn-group filter filter-basic">
         <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -121,50 +128,58 @@
     
 
     <!--This the main section-->
-    <div id="main-section">
-
-        <div class="container">
-
-            <div class="food card" data-="Cake" style="width: 18rem;">
-                    <img class="card-img-top" src="../Asset/Recipe-Images/cake2.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-            </div>
-            <br/>
-            <div class="food card" data-food-item="Bread" style="width: 18rem;">
-                    <img class="card-img-top" src="../Asset/Recipe-Images/bread1.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-            </div>
-            <br/>
-            <div class="food card" data-food-item="Other" style="width: 18rem;">
-                    <img class="card-img-top" src="../Asset/Recipe-Images/pancakes.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-            </div>
-            <br/>
-            <div class="food card" data-food-item="Cake" style="width: 18rem;">
-                    <img class="card-img-top" src="../Asset/Recipe-Images/brownie.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-            </div>
-            <br/>
-            <div class="food card" data-food-item="Bread" style="width: 18rem;">
-                    <img class="card-img-top" src="../Asset/Recipe-Images/bread.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-            </div>
-            <br/>
-
-
-
+ 
+        <div id="main-section">
+                <div id="list">
+                        <div class="card" data-filter-item data-filter-name="Cake" style="width: 18rem;">
+                            <img class="card-img-top" src="../Asset/Recipe-Images/cake2.jpeg" alt="Card image cap">
+                            <div class="in card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                         </div>
+                            <br/>
+            
+                        <div class="card" data-filter-item data-filter-name="Cake"  style="width: 18rem;">
+                                <img class="card-img-top" src="../Asset/Recipe-Images/cake2.jpeg" alt="Card image cap">
+                                <div class="in card-body">
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                        </div>
+                        <br/>
+                        <div class=" Bread card" data-filter-item data-filter-name="Bread" style="width: 18rem;">
+                                <img class="card-img-top" src="../Asset/Recipe-Images/bread1.jpeg" alt="Card image cap">
+                                <div class="in card-body">
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                        </div>
+                        <br/>
+                        <div class=" card" data-filter-item data-filter-name="Pancake"  style="width: 18rem;">
+                                <img class="card-img-top" src="../Asset/Recipe-Images/pancakes.jpg" alt="Card image cap">
+                                <div class="in card-body">
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                        </div>
+                        <br/>
+                        <div class="card" data-filter-item data-filter-name="Cake" style="width: 18rem;">
+                                <img class="card-img-top" src="../Asset/Recipe-Images/brownie.jpeg" alt="Card image cap">
+                                <div class="in card-body">
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                        </div>
+                        <br/>
+                        <div class="Cookie card"  data-filter-item data-filter-name="Cookie" style="width: 18rem;">
+                                <img class="card-img-top" src="../Asset/Recipe-Images/bread.jpeg" alt="Card image cap">
+                                <div class="in card-body">
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                        </div>
+                        <br/>
+            
+            
         </div>
-    </div>
+    
+    
+        
 
 
 
@@ -174,8 +189,7 @@
             <img class="media-icon" src="../Asset/instagram.png" alt="Instagram icon"/>       
             <img class="media-icon" src="../Asset/twitter.png" alt="Twitter Icon" /> 
         </footer>
-        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-        <script src="Recipe.js"></script>
+       
     </body>
 
 </html>

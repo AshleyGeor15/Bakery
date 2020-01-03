@@ -111,6 +111,26 @@
 
     }
 
+
+    .search-box-title{
+       text-align:center;
+        
+    }
+
+    .center-search-box{
+        margin: 0 auto;
+        text-align:center;
+    }
+
+    #search-text {
+        border-radius:10px;
+        -webkit-box-shadow: 24px 24px 10px -19px rgba(118,146,158,0.59);
+        -moz-box-shadow: 24px 24px 10px -19px rgba(118,146,158,0.59);
+        box-shadow: 24px 24px 10px -19px rgba(118,146,158,0.59);
+    }
+
+
+
     #main-section{
         margin-top: 10%;
     }
@@ -118,6 +138,10 @@
     form {
         display:flex;
         justify-content: center;
+    }
+
+    option .active {
+        background-color: goldenrod;
     }
 
     footer{
@@ -145,5 +169,19 @@
 
     }
 
+
+    .container div {
+        border: grey 1px solid;
+        width: 100px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        float: left;
+        transition: all 0.5s ease;
+      }
+      
+      .hidden {
+        display: none;
+      }
 
 }
