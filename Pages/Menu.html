@@ -14,7 +14,7 @@
 
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         
-        <link rel="stylesheet" href="Recipes.css" type="text/css">
+        <link rel="stylesheet" href="Menu.css" type="text/css">
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
         <script src="Recipe.js"></script>
@@ -74,9 +74,8 @@
                 <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
                 <div class="overlay-content">
                     <a href="../home.html">Home</a>
-                    <a href="./Recipe.html">Recipes</a>
-                    <a href="./Menu.html">Menu</a>
-                    
+                    <a href="./Pages/Recipe.html">Recipes</a>
+                    <a href="./Pages/Menu.html">Menu</a>
                     <a href="#">About Us</a>
                 </div>
             </div>
@@ -86,14 +85,7 @@
     </header>
     
 
-    <p class="main-recipe-title">Recipes</p>
-
-    <p class="search-box-title">Search for Recipes:</p>
-    <div class="center-search-box">
-        <input type="text" id="search-text" aria-placeholder="Search Recipes"
-        class="search-box" data-search >
-    </div>
-
+    
 
     <!--This is the filter bar for sort the recipes-->
 <!--
@@ -130,54 +122,16 @@
     <!--This the main section-->
  
         <div id="main-section">
-                <div id="list">
-                        <div class="card" data-filter-item data-filter-name="Cake" style="width: 18rem;">
-                            <img class="card-img-top" src="../Asset/Recipe-Images/cake2.jpeg" alt="Card image cap">
-                            <div class="in card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                         </div>
-                            <br/>
+           
+          <img class="build-icon responsive" alt="icon" src="../icons8-microwave-64.png">
+            <p class="construction-text">
+             Sorry... <br/> We're still baking
             
-                        <div class="card" data-filter-item data-filter-name="Cake"  style="width: 18rem;">
-                                <img class="card-img-top" src="../Asset/Recipe-Images/cake2.jpeg" alt="Card image cap">
-                                <div class="in card-body">
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                        </div>
-                        <br/>
-                        <div class=" Bread card" data-filter-item data-filter-name="Bread" style="width: 18rem;">
-                                <img class="card-img-top" src="../Asset/Recipe-Images/bread1.jpeg" alt="Card image cap">
-                                <div class="in card-body">
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                        </div>
-                        <br/>
-                        <div class=" card" data-filter-item data-filter-name="Pancake"  style="width: 18rem;">
-                                <img class="card-img-top" src="../Asset/Recipe-Images/pancakes.jpg" alt="Card image cap">
-                                <div class="in card-body">
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                        </div>
-                        <br/>
-                        <div class="card" data-filter-item data-filter-name="Cake" style="width: 18rem;">
-                                <img class="card-img-top" src="../Asset/Recipe-Images/brownie.jpeg" alt="Card image cap">
-                                <div class="in card-body">
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                        </div>
-                        <br/>
-                        <div class="Cookie card"  data-filter-item data-filter-name="Cookie" style="width: 18rem;">
-                                <img class="card-img-top" src="../Asset/Recipe-Images/bread.jpeg" alt="Card image cap">
-                                <div class="in card-body">
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                        </div>
-                        <br/>
-            
-            
+            </p>    
+
         </div>
     
+        <div class="space-footer"></div>
     
         
 
